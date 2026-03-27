@@ -1,103 +1,307 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Portafolio de Kevin Santiago Sierra León</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Iconos de Phosphor para estética moderna -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body>
 
-    <div class="container">
-        <!-- Columna 1 -->
-        <div class="columna">
-            <p><img src="IMAGES/foto_perfil.jpg" alt="foto de perfil" title="foto de perfil" class="foto-perfil"></p>
-            <div>
-                <p style="text-align: center;"><strong>Información personal</strong></p>
-                <p><strong>Nombre:</strong> Kevin Santiago</p>
-                <p><strong>Apellidos:</strong> Sierra León</p>
-                <p><strong>Estado civil:</strong> Soltero</p>
-                <p><strong>Genero:</strong> Masculino</p> 
-            </div>
-            <br>
-            <div>
-                <p style="text-align: center;"><strong>Información de contacto</strong></p>
-                <p><strong>Email:</strong> sierrakevin275@gmail.com </p>
-                <p><strong>Numero movil:</strong> 3134191742</p>
-                <p><strong>Numero fijo:</strong> N/A</p>
-                <p><strong>Dirección:</strong> Kra 17A No. 7A - 53</p>
-                <p><strong>Ciudad:</strong> Piedecuesta, Santander</p>
-            </div>
-            <br>
-            <div>
-                <p style="text-align: center;"><img src="IMAGES/redes_sociales.png" alt="redes sociales" title="redes sociales" width="8%"><strong>Redes sociales</strong></p>
-                <p><img src="IMAGES/facebook.png" alt="Facebook" title="Facebook" width="8%"><strong>Facebook: </strong>Kevin Sierra</p>
-                <p><img src="IMAGES/Instagram.png" alt="Instagram" title="Instagram" width="8%"><strong>Instagram: </strong>@santiago_leon03</p>
-                <p><img src="IMAGES/github.png" alt="GitHub" title="GitHub" width="8%"><strong>GitHub: </strong>Kevinsierra1</p>
-                <p><img src="IMAGES/linkedin.png" alt="LinkedIn" title="LinkedIn" width="8%"><strong>LinkedIn: </strong>Kevin Sierra</p>
-            </div>
+<body>
+    <!-- Cursor Personalizado JS -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#hero" class="logo">🚀 <span>KS</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Conocimientos</a></li>
+            </ul>
         </div>
-        <!-- Columna 2 -->
-        <div class="columna">
-            <p style="text-align: center;"><strong>Información academica</strong></p>
-            <p><strong>Basica:</strong> Colegio cafe madrid</p>
-            <p><strong>Secundaria:</strong> Colegio cafe madrid</p>
-            <p><strong>Tecnica:</strong> Tecnico contable Sena</p>
-            <p><strong>Universitario:</strong> Unidades Tecnologicas de Santander</p>
-            <p><strong>Postgrado:</strong> N/A</p>
-            <br>
-            <div>
-                <p style="text-align: center;"><strong>Proyectos</strong></p>
-                <p><strong>Titulo:</strong> Liga BetPlay</p>
-                <p><strong>Stack:</strong> Python</p>
-                <p><strong>Logros:</strong> Adquisción de habilidades para el desarrollo de software</p>
-                <p><strong>Repositorio:</strong> <a href="https://github.com/Kevinsierra1/Ejercicio.git" target="_blank">https://github.com/Kevinsierra1/Ejercicio.git</a></p>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <!-- Canvas para partículas JS de fondo -->
+            <canvas id="hero-particles"></canvas>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hola, soy</p>
+                    <h1 class="name">Kevin Santiago <span class="highlight">Sierra León</span></h1>
+                    <p class="role"><span id="typed-text"></span><span class="cursor-blink">|</span></p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn"><i class="ph ph-envelope-simple"></i> Contáctame</a>
+                        <a href="#projects" class="btn secondary-btn"><i class="ph ph-code"></i> Ver Proyectos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="IMAGES/foto_perfil.jpg" alt="Foto de Kevin Sierra">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div>
-                <p style="text-align: center;"><strong>Experiencia laboral</strong></p>
-                <p><strong>Empresa: Cybertel Telecomunicaciones</strong></p>
-                <p><strong>Fecha de inicio:</strong> Marzo 2018</p>
-                <p><strong>Fecha fin:</strong> Septiembre 2018</p>
-                <p><strong>Cargo:</strong> Auxiliar de soporte ip</p>
-                <p><strong>Logros:</strong> Trabaje en diferentes proyectos dentro de la Empresa</p>
-                <br>
-                <div><p><strong>Empresa: Coinsa SAS</strong></p>
-                <p><strong>Fecha de inicio:</strong> Noviembre 2020</p>
-                <p><strong>Fecha fin:</strong> Enero 2023</p>
-                <p><strong>Cargo:</strong> Tecnico en sistemas</p>
-                <p><strong>Logros:</strong> Realización de servidor online para el almacenamiento de datos dentro de la empresa</p></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="ph ph-user-circle"></i>
+                    <h3>Perfil</h3>
+                    <p>Técnico en desarrollo de software con 4 años de experiencia en el sector tecnológico,
+                        participando en el desarrollo y soporte de soluciones informáticas en entornos públicos y
+                        privados. Cuenta con conocimientos en programación, bases de datos y mantenimiento de sistemas
+                        computacionales, así como experiencia en instalación de software, soporte técnico y
+                        administración básica de infraestructura tecnológica.<br><br>Se caracteriza por su capacidad de
+                        aprendizaje, trabajo en equipo y adaptación a nuevas tecnologías. Orientado al desarrollo de
+                        aplicaciones y soluciones tecnológicas que optimicen procesos y aporten valor a las
+                        organizaciones.</p>
+                </div>
+                <div class="about-card">
+                    <i class="ph ph-identification-card"></i>
+                    <h3>Información</h3>
+                    <ul>
+                        <li><strong>Estado civil:</strong> Soltero</li>
+                        <li><strong>Género:</strong> Masculino</li>
+                        <li><strong>Ubicación:</strong> Piedecuesta, Santander</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <i class="ph ph-graduation-cap"></i>
+                    <h3>Formación</h3>
+                    <ul>
+                        <li><strong>Campuslands (2025 - Act):</strong> Técnico laboral en desarrollo de software</li>
+                        <li><strong>SENA (2016 - 2018):</strong> Tecnólogo en Implementación de Redes y Servicios de
+                            Telecomunicaciones</li>
+                        <li><strong>Capacitaciones:</strong> Cableado estructurado (2018), Antenas (2016), Alturas
+                            (2011)</li>
+                        <li><strong>Secundaria:</strong> Colegio Café Madrid</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- Columna 3 -->
-        <div class="columna">
-            <p style="text-align: center;"><strong>Conocimientos</strong></p>
-            <p><strong>Stack:</strong> Python</p>
-            <p><strong>Nivel:</strong> Básico</p>
-            <div>
-                <br>
-                <p style="text-align: center;"><strong>Idiomas:</strong></p>
-                <p><strong>Idioma:</strong> Español</p>
-                <p><strong>Lee:</strong> Avanzado </p>
-                <p><strong>Escribe:</strong> Avanzado</p>
-                <p><strong>Habla:</strong> Avanzado</p>
-                <br>
-                <p><strong>Idioma:</strong> Inglés</p>
-                <p><strong>Lee:</strong> Intermedio </p>
-                <p><strong>Escribe:</strong> Intermedio</p>
-                <p><strong>Habla:</strong> Intermedio</p>
-                <div>
-                    <br>
-                    <p style="text-align: center;"><strong>Video presentación:</strong></p>
+
+            <div class="video-container">
+                <h3 class="subsection-title">Presentación en Video</h3>
+                <div class="video-wrapper">
                     <video controls>
-                        <source src="VIDEOS/video_presentacion.mp4" type="video/mp4" width="200" height="200">
+                        <source src="VIDEOS/video_presentacion.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                     </video>
                 </div>
             </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experiencia <span class="highlight">Laboral</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Proyecto Javascript Campuslands</h3>
+                        <p class="role-title">Desarrollador</p>
+                        <p class="date">2025 - Actualidad</p>
+                        <p class="description">Proyecto realizado con el lenguaje de programación Javascript, el cual
+                            consta de una página web diseñada para un hotel.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Asamblea Departamental de Santander</h3>
+                        <p class="role-title">Soporte Técnico</p>
+                        <p class="date">Abril 2023 - Agosto 2023</p>
+                        <p class="description">Realizar el apoyo en la elaboración, revisión y diligenciamiento de la
+                            base de datos.<br>Brindar soporte en materia de mantenimiento de equipos ofimáticos de la
+                            entidad.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Coinsa SAS</h3>
+                        <p class="role-title">Soporte Técnico</p>
+                        <p class="date">2020 - 2021</p>
+                        <p class="description">Soporte y mantenimiento de cómputo a diferentes empresas del sector
+                            privado.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Cybertel Telecomunicaciones</h3>
+                        <p class="role-title">Soporte y Mantenimiento de Redes</p>
+                        <p class="date">2018 - 2019</p>
+                        <p class="description">Mantenimiento de equipos de cómputo, servidores, routers y switches,
+                            cableado estructurado en diferentes sedes de la UNAB.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="ph ph-folder-open folder-icon"></i>
+                        <a href="https://github.com/Kevinsierra1/Ejercicio.git" target="_blank" class="github-link"><i
+                                class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3>Liga BetPlay</h3>
+                    <p class="project-desc">Sistema desarrollado en Python para el funcionamiento y control de un
+                        torneo. Adquisición de habilidades fundacionales para el desarrollo de software.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="ph ph-folder-open folder-icon"></i>
+                        <a href="https://guileless-wisp-e7f288.netlify.app/" target="_blank" class="github-link"><i
+                                class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3>Hotel (Proyecto JavaScript Campuslands)</h3>
+                    <p class="project-desc">Página web interactiva diseñada para la gestión y presentación de un hotel,
+                        implementando lógica avanzada con Vanilla JavaScript, manejo del DOM y eventos modulares.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="ph ph-folder-open folder-icon"></i>
+                        <a href="https://sweet-capybara-e6664c.netlify.app/" target="_blank" class="github-link"><i
+                                class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3>Proyecto HTML5</h3>
+                    <p class="project-desc">Sitio web construido con enfoque en la accesibilidad, maquetación semántica
+                        y estructuración limpia utilizando exclusivamente HTML5.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="ph ph-folder-open folder-icon"></i>
+                        <a href="https://github.com/Kevinsierra1/PROYECTO_MySQL_2_Kevin_Santiago_Sierra_Leon.git"
+                            target="_blank" class="github-link"><i class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3>Proyecto Base de Datos MySQL</h3>
+                    <p class="project-desc">Diseño, estructuración y normalización de una base de datos relacional.
+                        Incluye esquemas complejos, procedimientos y consultas optimizadas para gestión de datos.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Conocimientos e <span class="highlight">Idiomas</span></h2>
+
+            <div class="skills-container">
+                <div class="skills-box card">
+                    <h3><i class="ph ph-terminal-window"></i> Stack Tecnológico</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python (Completo)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (Completo)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML (Completo)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL (Completo)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C# (Cursando actualmente)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-box card">
+                    <h3><i class="ph ph-translate"></i> Idiomas</h3>
+                    <div class="language-grid">
+                        <div class="lang-item">
+                            <h4>Español</h4>
+                            <p>Nativo (Avanzado)</p>
+                        </div>
+                        <div class="lang-item">
+                            <h4>Inglés</h4>
+                            <p>B1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Hablemos</h2>
+                <p>¿Interesado en trabajar juntos? Contáctame a través de mis redes sociales o enviándome un correo
+                    electrónico.</p>
+                <div class="contact-methods">
+                    <a href="mailto:sierrakevin275@gmail.com" class="contact-link"><i class="ph ph-envelope-simple"></i>
+                        sierrakevin275@gmail.com</a>
+                    <a href="tel:3134191742" class="contact-link"><i class="ph ph-phone"></i> 3134191742</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Kevinsierra1" class="social-icon" title="GitHub" target="_blank">
+                    <i class="ph ph-github-logo"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-sierra-leon/" class="social-icon" title="LinkedIn"
+                    target="_blank">
+                    <i class="ph ph-linkedin-logo"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kevin Santiago Sierra León. Portafolio Cyber-Futurista.</p>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
 </body>
-</html>e
+
+</html>
