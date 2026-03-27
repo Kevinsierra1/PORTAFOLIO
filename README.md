@@ -2,6 +2,10 @@
 
 Este proyecto es un portafolio web personal desarrollado con **HTML** y **CSS**. Presenta información académica, experiencia laboral, conocimientos, idiomas, redes sociales y una video presentación, todo distribuido en un diseño moderno y profesional de tres columnas.
 
+## Enlace de Netlify
+
+https://genuine-cupcake-8528aa.netlify.app/
+
 ## Características
 
 - Diseño responsivo y profesional.
