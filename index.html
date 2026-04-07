@@ -20,11 +20,13 @@
     <nav class="navbar">
         <div class="nav-content">
             <a href="#hero" class="logo">🚀 <span>KS</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Conocimientos</a></li>
+            <ul class="nav-links" style="align-items: center;">
+                <li><a href="#about" data-i18n="nav-about">Sobre mí</a></li>
+                <li><a href="#experience" data-i18n="nav-exp">Experiencia</a></li>
+                <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Conocimientos</a></li>
+                <li><button id="lang-toggle" class="btn secondary-btn"
+                        style="padding: 0.3rem 0.8rem; font-size: 0.9rem;">EN</button></li>
             </ul>
         </div>
     </nav>
@@ -37,12 +39,14 @@
 
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="greeting">Hola, soy</p>
+                    <p class="greeting" data-i18n="greeting">Hola, soy</p>
                     <h1 class="name">Kevin Santiago <span class="highlight">Sierra León</span></h1>
                     <p class="role"><span id="typed-text"></span><span class="cursor-blink">|</span></p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn primary-btn"><i class="ph ph-envelope-simple"></i> Contáctame</a>
-                        <a href="#projects" class="btn secondary-btn"><i class="ph ph-code"></i> Ver Proyectos</a>
+                        <a href="#contact" class="btn primary-btn"><i class="ph ph-envelope-simple"></i> <span
+                                data-i18n="contact-btn">Contáctame</span></a>
+                        <a href="#projects" class="btn secondary-btn"><i class="ph ph-code"></i> <span
+                                data-i18n="projects-btn">Ver Proyectos</span></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -56,12 +60,13 @@
 
         <!-- About Section -->
         <section id="about" class="section">
-            <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+            <h2 class="section-title" data-i18n="about-title">Sobre <span class="highlight">Mí</span></h2>
             <div class="about-grid">
                 <div class="about-card">
                     <i class="ph ph-user-circle"></i>
-                    <h3>Perfil</h3>
-                    <p>Técnico en desarrollo de software con 4 años de experiencia en el sector tecnológico,
+                    <h3 data-i18n="profile-title">Perfil</h3>
+                    <p data-i18n="profile-p1">Técnico en desarrollo de software con 4 años de experiencia en el sector
+                        tecnológico,
                         participando en el desarrollo y soporte de soluciones informáticas en entornos públicos y
                         privados. Cuenta con conocimientos en programación, bases de datos y mantenimiento de sistemas
                         computacionales, así como experiencia en instalación de software, soporte técnico y
@@ -72,29 +77,32 @@
                 </div>
                 <div class="about-card">
                     <i class="ph ph-identification-card"></i>
-                    <h3>Información</h3>
+                    <h3 data-i18n="info-title">Información</h3>
                     <ul>
-                        <li><strong>Estado civil:</strong> Soltero</li>
-                        <li><strong>Género:</strong> Masculino</li>
-                        <li><strong>Ubicación:</strong> Piedecuesta, Santander</li>
+                        <li data-i18n="info-status"><strong>Estado civil:</strong> Soltero</li>
+                        <li data-i18n="info-gender"><strong>Género:</strong> Masculino</li>
+                        <li data-i18n="info-location"><strong>Ubicación:</strong> Piedecuesta, Santander</li>
                     </ul>
                 </div>
                 <div class="about-card">
                     <i class="ph ph-graduation-cap"></i>
-                    <h3>Formación</h3>
+                    <h3 data-i18n="edu-title">Formación</h3>
                     <ul>
-                        <li><strong>Campuslands (2025 - Act):</strong> Técnico laboral en desarrollo de software</li>
-                        <li><strong>SENA (2016 - 2018):</strong> Tecnólogo en Implementación de Redes y Servicios de
+                        <li data-i18n="edu-1"><strong>Campuslands (2025 - Act):</strong> Técnico laboral en desarrollo
+                            de software</li>
+                        <li data-i18n="edu-2"><strong>SENA (2016 - 2018):</strong> Tecnólogo en Implementación de Redes
+                            y Servicios de
                             Telecomunicaciones</li>
-                        <li><strong>Capacitaciones:</strong> Cableado estructurado (2018), Antenas (2016), Alturas
+                        <li data-i18n="edu-3"><strong>Capacitaciones:</strong> Cableado estructurado (2018), Antenas
+                            (2016), Alturas
                             (2011)</li>
-                        <li><strong>Secundaria:</strong> Colegio Café Madrid</li>
+                        <li data-i18n="edu-4"><strong>Secundaria:</strong> Colegio Café Madrid</li>
                     </ul>
                 </div>
             </div>
 
             <div class="video-container">
-                <h3 class="subsection-title">Presentación en Video</h3>
+                <h3 class="subsection-title" data-i18n="video-title">Presentación en Video</h3>
                 <div class="video-wrapper">
                     <video controls>
                         <source src="VIDEOS/video_presentacion.mp4" type="video/mp4">
@@ -106,15 +114,16 @@
 
         <!-- Experience Section -->
         <section id="experience" class="section">
-            <h2 class="section-title">Experiencia <span class="highlight">Laboral</span></h2>
+            <h2 class="section-title" data-i18n="exp-title">Experiencia <span class="highlight">Laboral</span></h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
                         <h3>Proyecto Javascript Campuslands</h3>
-                        <p class="role-title">Desarrollador</p>
-                        <p class="date">2025 - Actualidad</p>
-                        <p class="description">Proyecto realizado con el lenguaje de programación Javascript, el cual
+                        <p class="role-title" data-i18n="exp-role-1">Desarrollador</p>
+                        <p class="date" data-i18n="exp-date-1">2025 - Actualidad</p>
+                        <p class="description" data-i18n="exp-desc-1">Proyecto realizado con el lenguaje de programación
+                            Javascript, el cual
                             consta de una página web diseñada para un hotel.</p>
                     </div>
                 </div>
@@ -122,9 +131,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
                         <h3>Asamblea Departamental de Santander</h3>
-                        <p class="role-title">Soporte Técnico</p>
-                        <p class="date">Abril 2023 - Agosto 2023</p>
-                        <p class="description">Realizar el apoyo en la elaboración, revisión y diligenciamiento de la
+                        <p class="role-title" data-i18n="exp-role-2">Soporte Técnico</p>
+                        <p class="date" data-i18n="exp-date-2">Abril 2023 - Agosto 2023</p>
+                        <p class="description" data-i18n="exp-desc-2">Realizar el apoyo en la elaboración, revisión y
+                            diligenciamiento de la
                             base de datos.<br>Brindar soporte en materia de mantenimiento de equipos ofimáticos de la
                             entidad.</p>
                     </div>
@@ -133,9 +143,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
                         <h3>Coinsa SAS</h3>
-                        <p class="role-title">Soporte Técnico</p>
+                        <p class="role-title" data-i18n="exp-role-3">Soporte Técnico</p>
                         <p class="date">2020 - 2021</p>
-                        <p class="description">Soporte y mantenimiento de cómputo a diferentes empresas del sector
+                        <p class="description" data-i18n="exp-desc-3">Soporte y mantenimiento de cómputo a diferentes
+                            empresas del sector
                             privado.</p>
                     </div>
                 </div>
@@ -143,9 +154,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
                         <h3>Cybertel Telecomunicaciones</h3>
-                        <p class="role-title">Soporte y Mantenimiento de Redes</p>
+                        <p class="role-title" data-i18n="exp-role-4">Soporte y Mantenimiento de Redes</p>
                         <p class="date">2018 - 2019</p>
-                        <p class="description">Mantenimiento de equipos de cómputo, servidores, routers y switches,
+                        <p class="description" data-i18n="exp-desc-4">Mantenimiento de equipos de cómputo, servidores,
+                            routers y switches,
                             cableado estructurado en diferentes sedes de la UNAB.</p>
                     </div>
                 </div>
@@ -154,7 +166,7 @@
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+            <h2 class="section-title" data-i18n="proj-title">Mis <span class="highlight">Proyectos</span></h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
@@ -163,7 +175,8 @@
                                 class="ph ph-github-logo"></i></a>
                     </div>
                     <h3>Liga BetPlay</h3>
-                    <p class="project-desc">Sistema desarrollado en Python para el funcionamiento y control de un
+                    <p class="project-desc" data-i18n="proj-desc-1">Sistema desarrollado en Python para el
+                        funcionamiento y control de un
                         torneo. Adquisición de habilidades fundacionales para el desarrollo de software.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
@@ -176,7 +189,8 @@
                                 class="ph ph-github-logo"></i></a>
                     </div>
                     <h3>Hotel (Proyecto JavaScript Campuslands)</h3>
-                    <p class="project-desc">Página web interactiva diseñada para la gestión y presentación de un hotel,
+                    <p class="project-desc" data-i18n="proj-desc-2">Página web interactiva diseñada para la gestión y
+                        presentación de un hotel,
                         implementando lógica avanzada con Vanilla JavaScript, manejo del DOM y eventos modulares.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">JavaScript</span>
@@ -191,7 +205,8 @@
                                 class="ph ph-github-logo"></i></a>
                     </div>
                     <h3>Proyecto HTML5</h3>
-                    <p class="project-desc">Sitio web construido con enfoque en la accesibilidad, maquetación semántica
+                    <p class="project-desc" data-i18n="proj-desc-3">Sitio web construido con enfoque en la
+                        accesibilidad, maquetación semántica
                         y estructuración limpia utilizando exclusivamente HTML5.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">HTML</span>
@@ -205,7 +220,8 @@
                             target="_blank" class="github-link"><i class="ph ph-github-logo"></i></a>
                     </div>
                     <h3>Proyecto Base de Datos MySQL</h3>
-                    <p class="project-desc">Diseño, estructuración y normalización de una base de datos relacional.
+                    <p class="project-desc" data-i18n="proj-desc-4">Diseño, estructuración y normalización de una base
+                        de datos relacional.
                         Incluye esquemas complejos, procedimientos y consultas optimizadas para gestión de datos.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">MySQL</span>
@@ -217,54 +233,100 @@
 
         <!-- Skills Section -->
         <section id="skills" class="section">
-            <h2 class="section-title">Conocimientos e <span class="highlight">Idiomas</span></h2>
+            <h2 class="section-title" data-i18n="skills-title">Conocimientos e <span class="highlight">Idiomas</span>
+            </h2>
 
             <div class="skills-container">
-                <div class="skills-box card">
-                    <h3><i class="ph ph-terminal-window"></i> Stack Tecnológico</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Python (Completo)</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 100%;"></div>
+                <div class="skills-box card skill-toggle-box">
+                    <div class="skill-hard">
+                        <h3><i class="ph ph-terminal-window"></i> <span data-i18n="tech-stack">Stack Tecnológico</span>
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python (Completo)</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript (Completo)</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML (Completo)</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL (Completo)</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C# (Cursando actualmente)</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 30%;"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript (Completo)</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <div class="skill-soft">
+                        <h3><i class="ph ph-users"></i> <span data-i18n="soft-skills">Habilidades Blandas</span></h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-leadership">Liderazgo</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">HTML (Completo)</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 100%;"></div>
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-teamwork">Trabajo en equipo</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MySQL (Completo)</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 100%;"></div>
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-responsibility">Responsabilidad</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C# (Cursando actualmente)</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 30%;"></div>
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-problem-solving">Resolución de
+                                    problemas</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-adaptability">Adaptabilidad</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name" data-i18n="skill-communication">Comunicación</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skills-box card">
-                    <h3><i class="ph ph-translate"></i> Idiomas</h3>
+                    <h3 data-i18n="lang-title"><i class="ph ph-translate"></i> Idiomas</h3>
                     <div class="language-grid">
                         <div class="lang-item">
-                            <h4>Español</h4>
-                            <p>Nativo (Avanzado)</p>
+                            <h4 data-i18n="lang-es">Español</h4>
+                            <p data-i18n="lang-es-lvl">Nativo</p>
                         </div>
                         <div class="lang-item">
-                            <h4>Inglés</h4>
+                            <h4 data-i18n="lang-en">Inglés</h4>
                             <p>B1</p>
                         </div>
                     </div>
@@ -277,8 +339,9 @@
     <footer id="contact" class="site-footer">
         <div class="footer-content">
             <div class="contact-info">
-                <h2>Hablemos</h2>
-                <p>¿Interesado en trabajar juntos? Contáctame a través de mis redes sociales o enviándome un correo
+                <h2 data-i18n="footer-title">Hablemos</h2>
+                <p data-i18n="footer-desc">¿Interesado en trabajar juntos? Contáctame a través de mis redes sociales o
+                    enviándome un correo
                     electrónico.</p>
                 <div class="contact-methods">
                     <a href="mailto:sierrakevin275@gmail.com" class="contact-link"><i class="ph ph-envelope-simple"></i>
@@ -297,10 +360,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Kevin Santiago Sierra León. Portafolio Cyber-Futurista.</p>
+            <p data-i18n="footer-bottom">&copy; 2024 Kevin Santiago Sierra León. Portafolio Cyber-Futurista.</p>
         </div>
     </footer>
 
+    <script src="JS/i18n.js"></script>
     <script src="JS/main.js"></script>
 </body>
 

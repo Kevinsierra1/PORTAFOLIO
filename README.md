@@ -46,10 +46,6 @@ PORTAFOLIO_HTML/
 - Cambia los colores y estilos en `CSS/style.css` según tu preferencia.
 - Reemplaza las imágenes y el video por tus propios archivos.
 
-## Link de apertura en netlify
-
-https://jovial-crepe-142484.netlify.app/
-
 ## Créditos
 
 Desarrollado por Kevin Santiago

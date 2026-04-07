@@ -134,12 +134,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 6. Typewriter Effect
     const typedTextSpan = document.getElementById("typed-text");
-    const textArray = ["Técnico en Sistemas", "Desarrollador de Software"];
+    let textArrays = {
+        es: ["Técnico en Sistemas", "Desarrollador de Software"],
+        en: ["Systems Technician", "Software Developer"]
+    };
+    let currentTypeLang = 'es';
+    let textArray = textArrays[currentTypeLang];
     const typingDelay = 100;
     const erasingDelay = 40;
     const newTextDelay = 2000;
     let textArrayIndex = 0;
     let charIndex = 0;
+
+    window.addEventListener('languageChanged', (e) => {
+        currentTypeLang = e.detail;
+        textArray = textArrays[currentTypeLang];
+    });
 
     function type() {
         if (!typedTextSpan) return;
